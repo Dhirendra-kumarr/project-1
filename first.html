@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>grocery shop</title>
+    <link type="text/css" rel="stylesheet" href="second.css">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    
+                    <div>
+                        <h1> grocery of this month</h1>
+                        
+                            <label for="month">Choose current month:</label>
+                            <select name="month" id="month">
+                              <option value="January">January</option>
+                              <option value="February">February</option>
+                              <option value="March">March</option>
+                              <option value="April">April</option>
+                              <option value="May">May</option>
+                              <option value="June">June</option>
+                              <option value="July">July</option>
+                              <option value="August">August</option>
+                              <option value="September">September</option>
+                              <option value="October">October</option>
+                              <option value="November">November</option>
+                              <option value="December">December</option>
+
+
+                            </select>
+                            <br>
+
+                        <label for="productCode">Product Code</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="grocery">grocery Name</label>
+                        <input type="text" name="product" id="product">
+                    </div>
+                    <div>
+                        <label for="weight">weight in kg</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perPrice">Price</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>grocery Name</th>
+                                <th>weight in kg</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./third.js"></script>
+</body>
+</html>
